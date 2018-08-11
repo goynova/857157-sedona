@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Петрова](https://up.htmlacademy.ru/htmlcss/22/user/857157).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига] (https://htmlacademy.ru/profile/maximfariga)
 
 ---
 
