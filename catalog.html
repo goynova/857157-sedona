@@ -13,7 +13,6 @@
         <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
         <li><a href="photovideo.html">Фото и видео</a></li>
-        <li class="logo-menu"></li>
         <li><a href="maps.html">Карта штата</a></li>
         <li><a href="hostel.html">Гостиницы</a></li>
       </ul>
@@ -24,35 +23,81 @@
       <!-- форма -->
     </section>
     <section class="options">
-      <span class="option-found"> Найдено:3</span>
-      <span class="option-sort">Сортировка</span>
-      <a href="price"> По цене </a>
-      <a href="type"> По типу</a>
-      <a href="rating"> По рейтингу</a>
+      <p class="option-found">Найдено:<span>3</span></p>
+      <div class="option-type">
+        <ul class="option-type-list">
+          <li><a href="price">По цене</a></li>
+          <li><a href="type">По типу</a></li>
+          <li><a href="rating">По рейтингу</a></li>
+        </ul>
+      </div>
+      <ul class="option-direction">
+        <li><a href="to-top"><span class="visually-hidden">По возрастанию</span></a></li>
+        <li><a href="to-bottom"><span class="visually-hidden">По убыванию</span></a></li>
+      </ul>
     </section>
+
+
     <section class="result">
+
+      <article class="result-otel">
       <a href="result-otel">
-        <figure class="resulte-img"><img src="res-img" alt="Amara resort & spa"></figure>
+        <img src="res-img" alt="Amara resort & spa">
       </a>
-      <a href="result-info"> Amara resort & spa</a>
-    </section>
-    <section class="result">
-      <a href="result-otel">
-        <figure class="resulte-img"><img src="res-img" alt="Desert quail inn"></figure>
-      </a>
-      <a href="result-info">Desert quail inn</a>
-    </section>
-    <section class="result">
-      <a href="result-otel">
-        <figure class="resulte-img"><img src="res-img" alt="Villas at poco diablo"></figure>
-      </a>
-      <a href="result-info">Villas at poco diablo</a>
-    </section>
+      <h2><a href="Amara-resort"> Amara resort & spa</a></h2>
+      <div class="result-otel-p">
+        <p>Гостиница</p>
+        <p> От 4000р.</p>
+      </div>
+         <button type="button"> Подробнее</button>
+         <button type="button"> Забронировать</button>
+      <div class="rating">
+          <span>*****</span>
+          <span>Рейтинг:8.5</span>
+      </div>
+     </article>
+
+     <article class="result-otel">
+     <a href="result-otel">
+       <img src="res-img" alt="Desert quail inn">
+     </a>
+     <h2><a href="Desert-quail "> Desert quail inn</a></h2>
+     <div class="result-otel-p">
+       <p>Мотель</p>
+       <p> От 3000р.</p>
+     </div>
+        <button type="button"> Подробнее</button>
+        <button type="button"> Забронировать</button>
+      <div class="rating">
+        <span>***</span>
+        <span>Рейтинг:8.9</span>
+      </div>
+    </article>
+
+    <article class="result-otel">
+    <a href="result-otel">
+      <img src="res-img" alt="Villas at poco diablo">
+    </a>
+    <h2><a href="Villas">Villas at poco diablo</a></h2>
+    <div class="result-otel-p">
+      <p>Апартаменты</p>
+      <p>От 2000р.</p>
+    </div>
+       <button type="button"> Подробнее</button>
+       <button type="button"> Забронировать</button>
+     <div class="rating">
+       <span>**</span>
+       <span>Рейтинг:9.2</span>
+       </div>
+   </article>
+</section>
+
   </main>
+
   <footer class="main-footer">
-    <div class="footer-social">
-      <a href="#" class="hashtag">#VISITSEDONA</a>
-   <ul>
+    <a href="#" class="hashtag">#VISITSEDONA</a>
+ <div class="footer-social">
+ <ul>
      <li><a class="social-button" href="#">twitter</a></li>
      <li><a class="social-button" href="#">facebook </a></li>
      <li><a class="social-button" href="#">youtube</a></li>
@@ -62,6 +107,6 @@
    WEBSITE BY
    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
  </p>
-</footer>
-</body>
-</html>
+ </footer>
+ </body>
+ </html>
