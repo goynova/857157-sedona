@@ -80,13 +80,34 @@
           <p>Большинство едет в Гранд Каньон и толпится там</p>
     </li>
     </ul>
+    <section class="map"></section>
     <section class="search">
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="date-trip">Укажите предполагаемые даты поездки, <br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button type="button">  Поиск гостиниц в Седоне</button>
+
+     <form class="booking-search" action="#" method="get">
+       <fieldset>
+         <legend>Поиск гостиницы в Седоне</legend>
+         <div class="search-date">
+          <label for="checkin">Дата заезда:</label>
+           <input type="date" name="chekin" id="checkin" value="2014-04-24">
+         </div>
+         <div class= "search-date">
+          <label for="checkout">Дата выезда:</label>
+          <input type="date" name="checkout" id="checkout" value="2014-07-04">
+         </div>
+         <div class="adult-and-child">
+           <label for="adult">Взрослые:</label>
+            <input class="calendar-select" name="adult" type="number" value="2" id="adult" min="0" max="50">
+          <label for="child">Дети:</label>
+           <input class="calendar-select" name="child" type="number" value="0" id="child" min="0" max="50">
+       </div>
+       <button class="index-button-search" type="submit">Найти</button>
+     </fieldset>
+     </form>
     </section>
-    <section class="map"></section>
+
        </main>
        <footer class="main-footer">
          <a href="#" class="hashtag">#VISITSEDONA</a>
