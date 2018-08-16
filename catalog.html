@@ -20,8 +20,55 @@
     </header>
   <main class="container">
     <section class="search-filter">
-      <!-- форма -->
-    </section>
+      <form action="#" method="get">
+        <fieldset>
+          <fieldset class="filter-column" >
+          <p class="filter-title">Инфраструктура</p>
+          <div class="filter-checkbox">
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" name="pool" id="pool" checked>
+          </div>
+          <div class="filter-checkbox">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="parking" id="parking">
+          </div>
+          <div class="filter-checkbox">
+            <label for="wifi">Wi-Fi</label>
+            <input type="checkbox" name="wifi" id="wifi">
+          </div>
+        </fieldset>
+          <fieldset class="filter-column" >
+          <p class="filter-title">Тип жилья:</p>
+          <div class="filter-checkbox">
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="hotel" id="hotel" checked>
+          </div>
+          <div class="filter-checkbox">
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="motel" id="motel" checked>
+          </div>
+          <div class="filter-checkbox">
+            <label for="apartment">Апартаменты</label>
+            <input type="checkbox" name="apartment" id="apartment" checked>
+          </div>
+        </fieldset>
+        <fieldset class="filter-column">
+          <p class="filter-title">Стоимость в сутки(р):</p>
+          <fieldset class="range-price">
+            <label for="min-price" class="visually-hidden">Минимальная цена</label>
+            <input type="text" name="min-price" value="0" id="min-price">
+            <div class="range-price-line visually-hidden">Линия</div>
+            <label for="max-price" class="visually-hidden">Максимальная цена</label>
+            <input type="text" name="max-price" value="3000" id="max-price">
+          </fieldset>
+          <fieldset class="range">
+          <input type="range" min="0" max="3000" id="price" name="price" value="2500">
+        </fieldset>
+ <button type="button" name="button-price">Показать</button>
+</fieldset>
+</fieldset>
+</form>
+</section>
     <section class="options">
       <p class="option-found">Найдено:<span>3</span></p>
       <div class="option-type">
