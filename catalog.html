@@ -20,52 +20,52 @@
     </header>
   <main class="container">
     <section class="search-filter">
-      <form action="#" method="get">
-        <fieldset>
-          <fieldset class="filter-column" >
-          <p class="filter-title">Инфраструктура</p>
-          <div class="filter-checkbox">
-            <label for="pool">Бассейн</label>
-            <input type="checkbox" name="pool" id="pool" checked>
-          </div>
-          <div class="filter-checkbox">
-            <label for="parking">Парковка</label>
-            <input type="checkbox" name="parking" id="parking">
-          </div>
-          <div class="filter-checkbox">
-            <label for="wifi">Wi-Fi</label>
-            <input type="checkbox" name="wifi" id="wifi">
-          </div>
+      <form class="filter-form" action="#" method="get">
+        <fieldset  class="filter-column">
+         <p class="filter-title">Инфраструктура</p>
+          <label >
+          <input type="checkbox" name="pool" checked>
+            <span class="filter-checkbox">Бассейн</span>
+          </label>
+          <label >
+            <input type="checkbox" name="parking">
+            <span class="filter-checkbox">Парковка</span>
+          </label>
+          <label >
+            <input type="checkbox" name="wifi">
+            <span class="filter-checkbox">Wi-Fi</span>
+          </label>
         </fieldset>
-          <fieldset class="filter-column" >
+
+<fieldset class="filter-column" >
           <p class="filter-title">Тип жилья:</p>
-          <div class="filter-checkbox">
-            <label for="hotel">Гостиница</label>
-            <input type="checkbox" name="hotel" id="hotel" checked>
-          </div>
-          <div class="filter-checkbox">
-            <label for="motel">Мотель</label>
-            <input type="checkbox" name="motel" id="motel" checked>
-          </div>
-          <div class="filter-checkbox">
-            <label for="apartment">Апартаменты</label>
-            <input type="checkbox" name="apartment" id="apartment" checked>
-          </div>
+          <label>
+            <input type="checkbox" name="hotel" checked>
+            <span class="filter-checkbox">Гостиница</span>
+          </label>
+          <label>
+            <input type="checkbox" name="motel" checked>
+            <span class="filter-checkbox">Мотель</span>
+          </label>
+          <label>
+            <input type="checkbox" name="apartment" checked>
+            <span class="filter-checkbox">Апартаменты</span>
+          </label>
         </fieldset>
+
         <fieldset class="filter-column">
           <p class="filter-title">Стоимость в сутки(р):</p>
           <fieldset class="range-price">
-            <label for="min-price" class="visually-hidden">Минимальная цена</label>
+            <label for="min-price" class="range-price">От</label>
             <input type="text" name="min-price" value="0" id="min-price">
-            <div class="range-price-line visually-hidden">Линия</div>
-            <label for="max-price" class="visually-hidden">Максимальная цена</label>
+            <span class="range-price-line visually-hidden">Линия</span>
+            <label for="max-price" class="range-price">До</label>
             <input type="text" name="max-price" value="3000" id="max-price">
           </fieldset>
           <fieldset class="range">
-          <input type="range" min="0" max="3000" id="price" name="price" value="2500">
+            <!--> фильтр по цене с двумя ползунками</-->
         </fieldset>
  <button type="button" name="button-price" class="button-price">Показать</button>
-</fieldset>
 </fieldset>
 </form>
 </section>
@@ -157,17 +157,17 @@
 
   <footer class="main-footer">
     <a href="#" class="hashtag">#VISITSEDONA</a>
- <div class="footer-social">
+<div class="footer-social">
  <ul>
-     <li><a class="social-button" href="#">twitter</a></li>
-     <li><a class="social-button" href="#">facebook </a></li>
-     <li><a class="social-button" href="#">youtube</a></li>
+     <li><a class="social-button" href="#" aria-label="Следите за нами в Твиттере"></a></li>
+     <li><a class="social-button" href="#" aria-label="Добавляйте нас на Фейсбуке"></a></li>
+     <li><a class="social-button" href="#" aria-label="Смотрите нас на youtube"></a></li>
    </ul>
- </div>
+</div>
  <p class="footer-copyright">
    WEBSITE BY
    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
  </p>
- </footer>
- </body>
- </html>
+</footer>
+</body>
+</html>

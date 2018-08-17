@@ -80,7 +80,7 @@
           <p>Большинство едет в Гранд Каньон и толпится там</p>
     </li>
     </ul>
-    <section class="map"></section>
+    <section class="map"><!-->Здесь будет карта<--></section>
     <section class="search">
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="date-trip">Укажите предполагаемые даты поездки, <br>
@@ -88,27 +88,39 @@
 
      <form class="booking-search" action="#" method="get">
        <fieldset>
-         <legend>Поиск гостиницы в Седоне</legend>
+         <button type="button" name="button-search" class="button-search">Поиск гостиницы в Седоне</button>
          <fieldset class="search-date">
           <label for="checkin">Дата заезда:</label>
            <input type="date" name="chekin" id="checkin" value="2014-04-24">
-            <button><img src="#" alt="Календарь"></button>
+            <button type="button" class="button-calendar visually-hidden" aria-label="Выберите дату">
+              <span class="visually-hidden">Календарь</span>
+            </button>
 
          </fieldset>
          <fieldset class= "search-date">
           <label for="checkout">Дата выезда:</label>
           <input type="date" name="checkout" id="checkout" value="2014-07-04">
-          <button type="submit"><img src="#"  alt="Календарь"></button>
+          <button type="button" class="button-calendar visually-hidden" aria-label="Выберите дату">
+            <span class="visually-hidden">Календарь</span>
+          </button>
 
          </fieldset>
-         <fieldset class="adult-and-child">
+
+         <div class="adult-and-child">
            <label for="adult">Взрослые:</label>
-            <input class="calendar-select" name="adult" type="number" value="2" id="adult" min="0" max="50">
-          <label for="child">Дети:</label>
+           <button class="icon-minus" type="button" aria-label="Уменьшить количество взрослых">-</button>
+           <input class="calendar-select" name="adult" type="number" value="2" id="adult" min="0" max="50">
+           <button class="icon-plus" type="button" aria-label="Увеличить количество взрослых">+</button>
+         </div>
+         <div class="adult-and-child">
+           <label for="child">Дети:</label>
+           <button class="icon-minus" type="button" aria-label="Уменьшить количество детей">-</button>
            <input class="calendar-select" name="child" type="number" value="0" id="child" min="0" max="50">
-       </fieldset>
+           <button class="icon-plus" type="button" aria-label="Увеличить количество детей">+</button>
+         </div>
+
        <button class="index-button-search" type="submit">Найти</button>
-     </fieldset>
+</fieldset>
      </form>
     </section>
 
@@ -117,11 +129,11 @@
          <a href="#" class="hashtag">#VISITSEDONA</a>
 <div class="footer-social">
       <ul>
-          <li><a class="social-button" href="#">twitter</a></li>
-          <li><a class="social-button" href="#">facebook </a></li>
-          <li><a class="social-button" href="#">youtube</a></li>
+          <li><a class="social-button" href="#" aria-label="Следите за нами в Твиттере"></a></li>
+          <li><a class="social-button" href="#" aria-label="Добавляйте нас на Фейсбуке"></a></li>
+          <li><a class="social-button" href="#" aria-label="Смотрите нас на youtube"></a></li>
         </ul>
-      </div>
+</div>
       <p class="footer-copyright">
         WEBSITE BY
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
