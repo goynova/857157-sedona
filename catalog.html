@@ -55,13 +55,10 @@
 
         <fieldset class="filter-column">
           <p class="filter-title">Стоимость в сутки(р):</p>
-          <fieldset class="range-price">
-            <label for="min-price" class="range-price">От</label>
-            <input type="text" name="min-price" value="0" id="min-price">
-            <span class="range-price-line visually-hidden">Линия</span>
-            <label for="max-price" class="range-price">До</label>
-            <input type="text" name="max-price" value="3000" id="max-price">
-          </fieldset>
+          <div class="range-price">
+            <label class="range-price">От<input type="number" name="min-price" value="0"></label>
+            <label class="range-price">До<input type="number" name="max-price" value="3000"></label>
+          </div>
           <fieldset class="range">
             <!--> фильтр по цене с двумя ползунками</-->
         </fieldset>

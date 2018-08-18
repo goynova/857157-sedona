@@ -85,38 +85,42 @@
       <h2 class="search-title">Заинтересовались?</h2>
       <p class="date-trip">Укажите предполагаемые даты поездки, <br>
       и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-
+<button type="button" name="button-search" class="button-search">Поиск гостиницы в Седоне</button>
      <form class="booking-search" action="#" method="get">
        <fieldset>
-         <button type="button" name="button-search" class="button-search">Поиск гостиницы в Седоне</button>
-         <fieldset class="search-date">
+
+         <div class="search-date">
           <label for="checkin">Дата заезда:</label>
            <input type="date" name="chekin" id="checkin" value="2014-04-24">
             <button type="button" class="button-calendar visually-hidden" aria-label="Выберите дату">
               <span class="visually-hidden">Календарь</span>
             </button>
+          </div>
 
-         </fieldset>
-         <fieldset class= "search-date">
+         <div class= "search-date">
           <label for="checkout">Дата выезда:</label>
           <input type="date" name="checkout" id="checkout" value="2014-07-04">
           <button type="button" class="button-calendar visually-hidden" aria-label="Выберите дату">
             <span class="visually-hidden">Календарь</span>
           </button>
-
-         </fieldset>
+         </div>
+      </fieldset>
 
          <div class="adult-and-child">
            <label for="adult">Взрослые:</label>
+           <div class="pius-minus">
            <button class="icon-minus" type="button" aria-label="Уменьшить количество взрослых">-</button>
            <input class="calendar-select" name="adult" type="number" value="2" id="adult" min="0" max="50">
            <button class="icon-plus" type="button" aria-label="Увеличить количество взрослых">+</button>
          </div>
+         </div>
          <div class="adult-and-child">
            <label for="child">Дети:</label>
+           <div class="pius-minus">
            <button class="icon-minus" type="button" aria-label="Уменьшить количество детей">-</button>
            <input class="calendar-select" name="child" type="number" value="0" id="child" min="0" max="50">
            <button class="icon-plus" type="button" aria-label="Увеличить количество детей">+</button>
+         </div>
          </div>
 
        <button class="index-button-search" type="submit">Найти</button>
