@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  position: relative;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -38,16 +37,16 @@ img {
 }
 
 .site-navigation a{
-  color: #000000;
+  color: inherit;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus{
-  color: #92bdd8;
+  color: #81b3d2;
 }
 
 .site-navigation a:active {
-color: #b2b2b2;
+color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation .current{
@@ -57,16 +56,11 @@ color: #b2b2b2;
 /*Седона- небольшой городок..*/
 .presentation{
 text-align: center;
-font-size: 14px;
 line-height: 26px;
-color: #000000;
 font-weight: 400;
-background-color: #ffffff;
 }
 .presentation .slogan{
   font-size: 21px;
-  line-height: 26px;
-  color: #000000;
   font-weight: 700;
 }
 .advantage-top{
@@ -78,13 +72,16 @@ background-color: #ffffff;
 .reason{
   text-align: center;
 }
-.reason h2{
+.square .reason-title{
  font-size: 21px;
- line-height: 21px;
+ color: #000000;
 }
-.reason p{
- font-size: 14px;
- line-height: 21px;
+.square .reason-title-white{
+ font-size: 21px;
+ color: #ffffff;
+}
+
+.reason-title p{
  font-weight: 400;
 }
 .reason .square{
@@ -96,8 +93,7 @@ background-color: #ffffff;
  text-align: center;
 }
 .advantage-top .square{
-background-color: #ffffff;
-color: :#000000
+color:#000000
 }
 .advantage-top h2{
   font-size: 21px;
@@ -110,9 +106,9 @@ color: :#000000
 }
 .advantage-bottom{
   text-align: center;
+  background-color: #eeeeee;
 }
 .advantage-bottom .square{
-background-color: #eeeeee;
 color: :#000000
 }
 .advantage-bottom h2{
@@ -120,22 +116,18 @@ color: :#000000
  line-height: 21px;
 }
 .advantage-bottom p{
-  font-size: 14px;
- line-height: 21px;
  font-weight: 400;
 }
 .search{
   text-align: center;
-  font-size: 14px;
   line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
 }
-.search h2{
+.search .search-title{
+ color: #000000;
   font-size: 30px;
- line-height: 24px;
+ line-height: 36px;
 }
-.search p{
+.search .date-trip{
  font-weight: 400;
 }
 .button-search {
@@ -143,25 +135,21 @@ color: :#000000
  line-height: 26px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 font-weight: 700;
   background-color: #766357;
   border: none;
 }
-.button-search:hover,
-.button-search:focus
- {
-  background-color: #503e33;
-  color: #ffffff;
+.button-search:hover{
+  background-color: #604e43;
 }
+
 .button-search:active{
-color: #7e7169;
+background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
 }
 .booking-search{
-  font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
   color: #000000;
 }
 
@@ -170,16 +158,15 @@ color: #7e7169;
   font-weight: 700;
   color: #000000;
   background-color: #f2f2f2;
-  border: none;
   text-align: left;
+  border: 2px solid #f2f2f2;
+	outline: none;
 }
 .date:hover{
   background-color: #ebebeb;
 }
 .date:focus{
   background-color: #ffffff;
-  box-shadow: 0 0 0 2px #e5e5e5;
-	outline: none;
 }
 
 .calendar-select{
@@ -188,6 +175,8 @@ color: #7e7169;
   background-color: #f2f2f2;
   border: none;
   text-align: center;
+  border: 2px solid #f2f2f2;
+  outline: none;
 }
 .icon-minus,
 .icon-plus{
@@ -210,7 +199,6 @@ color: #7e7169;
  line-height: 26px;
   text-align: center;
   color: #ffffff;
-  vertical-align: middle;
   text-transform: uppercase;
 font-weight: 700;
   background-color: #81b3d2;
@@ -220,7 +208,7 @@ font-weight: 700;
 background-color: #669ec0;
 }
 .button-find:active{
-  color: #6ca5c6;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -235,7 +223,7 @@ background-color: #669ec0;
 
 .main-footer {
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.9)
 }
 
 .footer .hashtag{
@@ -257,36 +245,31 @@ background-color: #669ec0;
 }
 
 .footer-copyright{
-  font-size: 14px;
+
  line-height: 26px;
   text-align: center;
   font-weight: 400;
-  color: #ffffff;
+
 
 }
 /*Каталог*/
 .container{
-  font-size: 14px;
- line-height: 21px;
   text-align: left ;
   font-weight: 400;
 }
 .search-filter fieldset {
   border: none;
-      display: flex;
 }
 .search-filter{
-  background-image: url("../img/background-blur.jpg");
-  background-color: #313c3e;
-background-size: cover;
-background-position:top center;
-  background-repeat: no-repeat;
-    color: #ffffff;
+  background: #313c3e url("../img/background-blur.jpg") 0 50% no-repeat;
+  color: #ffffff;
+  background-color: #b5d77;
 
+}
 
 
 }
-.search-filter p{
+.search-filter .filter-title{
   font-size: 16px;
  line-height: 21px;
   font-weight: 700;
@@ -312,10 +295,9 @@ background: 0 0;
 .range-price{
 border: 2px solid #ffffff;
 color: #ffffff;
-background: 0 0;
 text-align: center;
 border-radius: 3px;
-    padding: 5px 0;
+padding: 5px 0;
 
 }
 .range-price input{
@@ -330,30 +312,20 @@ border:none;
 .option-found{
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
   color: #000000;
-  background-color: #ffffff;
 }
-.option-type-name{
+.option-type{
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
 }
-.option-type-list{
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
-    text-decoration: none;
-}
+
 .option-type-list .option-list-current {
 	color: #81b3d2;
 }
 .option-type-list a{
-  color: #b9b9b9;
+  color: rgba(0,0,0,0.3)
 }
 .option-type-list a:hover {
 	color: #81b3d2;
@@ -363,32 +335,24 @@ border:none;
   color: #000000
 }
 
-.result-otel{
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
+.result-hotel{
+
 }
-.otel-link a{
+.hotel-link a{
   color: #000000;
 }
-.otel-link a:hover {
+.hotel-link a:hover {
   color: #81b3d2;
 }
-.otel-link a:active{
+.hotel-link a:active{
   color: #b2b2b2;
 }
-.result-otel p{
+.result-hotel p{
   font-weight: 400;
 
 }
 .hotel-more a{
-color: #ffffff;
-font-size: 14px;
-line-height: 21px;
-font-weight: 700
+  color: #ffffff;
 }
 
 .button-more{
@@ -401,7 +365,7 @@ background-color: #669ec0;
 
 
 .button-more:active {
-  color: #7aadcb;
+  color: rgba(255,255,255,0.3);
 	background-color: #5496bd;
 }
 
@@ -414,7 +378,7 @@ background-color: #604e43;
 }
 
 .button-reserved:active{
-  color: #857871;
+  color: rgba(255,255,255,0.3);
   background-color: #503e33;
 }
 
