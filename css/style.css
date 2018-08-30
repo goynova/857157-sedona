@@ -439,6 +439,7 @@ padding: 27px 72px 31px;
   display: flex;
 align-items: baseline;
 padding: 30px 72px;
+border-bottom: 1px solid #ccc;
 }
 
 .option-type{
