@@ -62,9 +62,11 @@ overflow: hidden;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -75px;
+    margin-left: -70px;
 }
 .main-header-logo img{
+  width: 140;
+  height: 71px;
   vertical-align: top;
   border-style: none;
 }
@@ -72,6 +74,8 @@ overflow: hidden;
     line-height: 26px;
     font-weight: bold;
     position: relative;
+    z-index: 1;
+
 }
 
 .site-navigation {
@@ -82,12 +86,14 @@ overflow: hidden;
     margin: 0;
     padding:0 72px;
     list-style: none;
+    flex-wrap: wrap;
+
 }
 
 .site-navigation li {
     width: 20%;
-    padding-top: 9px;
-    padding-bottom: 9px;
+
+
 }
 
 .site-navigation li:nth-child(1) {
@@ -95,23 +101,33 @@ overflow: hidden;
 }
 
 .site-navigation li:nth-child(2) {
-    text-align: left;
-    margin-right: auto;
+text-align: left;
+margin-right: auto;
 }
 
 .site-navigation li:nth-child(3) {
-    text-align: right;
+text-align: right;
+margin-left: auto;
 }
 
 .site-navigation li:nth-child(4) {
-
-    text-align: right;
+text-align: right;
 }
 
 .site-navigation a{
-  color: inherit;
+color: inherit;
+ display: block;
+ vertical-align: middle;
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+.left-main{
+  padding-left: 29px;
 }
 
+.right-main{
+  padding-right: 32px;
+}
 .site-navigation a:hover,
 .site-navigation a:focus{
   color: #81b3d2;
@@ -131,7 +147,8 @@ color: rgba(0, 0, 0, 0.3);
 .presentation{
 text-align: center;
 line-height: 26px;
-padding: 50px 0;
+padding-top: 61px;
+padding-bottom: 51px;
 margin: 0 auto;
 max-width: 560px;
 }
@@ -139,22 +156,45 @@ max-width: 560px;
 .presentation .slogan{
 font-size: 21px;
 font-weight: 700;
+margin: 0;
+margin-bottom: 28px;
+}
+
+.presentation p{
+  margin: 0 auto;
+
 }
 
 .welcome-logo{
 background-image: url("../img/background.jpg");
+position: relative;
 background-repeat: no-repeat;
-background-position: 50% 28%;
-background-size: cover;
+background-position:50% 28%;
+background-size: 100%;
 background-color: #97c0da;
 text-align: center;
-padding-top: 76px;
-padding-bottom: 79px;
-height: 508px;
+padding-top: 77px;
+padding-bottom: 80px;
+max-height: 508px;
+z-index: 0;
 }
-/*Общие селекторы для преимуществ*/
+
+.welcome-logo::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../img/intro-mask.svg") no-repeat 0 0;
+    background-position: 0 50%;
+    width: 1200px;;
+    height: 59px;
+    bottom: 0px;
+    left: 0px;
+    top: 450px;
+}
 .square{
 width: 400px;
+	text-align: center;
+
 }
 .reason-title p{
  font-weight: 400;
@@ -175,19 +215,64 @@ min-height: 256px;
 
 .reason .square{
 display: flex;
+flex-wrap: wrap;
 flex-direction: column;
-justify-content: center;
+justify-content: space-around;
 color: #ffffff;
 background-color: #81b3d2;
+padding-top: 46px;
+padding-right: 55px;
+padding-left: 55px;
+padding-bottom: 58px;
+margin-top: 0;
+
+}
+.reason .square-bottom{
+width: 400px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-around;
+color: #ffffff;
+background-color: #81b3d2;
+padding-top: 42px;
+padding-right: 45px;
+padding-left: 45px;
+padding-bottom: 62px;
+margin-top: 0;
 }
 
-.square .reason-title-white{
+.reason-title-white{
 font-size: 21px;
 color: #ffffff;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 20px;
+width: 160px;
+text-align: center;
+
+
+}
+.reason-more{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.number{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.town,
+.bridge{
+height: 256px;
 }
 
-.reason-img{
-height: 256px;
+.bridge{
+  order: -1;
 }
 
 /*Верхняя строка преимуществ*/
@@ -196,30 +281,48 @@ height: 256px;
 list-style: none;
  text-align: center;
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
  align-items: center;
- min-height: 330px;
+min-height: 330px;
  padding: 0;
  margin: 0;
  background-color: #ffffff;
 }
 
 .advantage-top .square{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
 color:#000000;
-padding: 71px 0;
+padding-top: 60px;
+padding-bottom: 85px;
+padding-left: 50px;
+padding-right: 50px;
+justify-content: space-between;
+align-items: center;
+margin: 0;
+
+
 }
 .advantage-top .square img{
-width: 76px;
-height: 76px;
+  width: 74px;
+  height: 70px;
+  margin-bottom: 32px;
+
 }
-.advantage-top h2{
+.reason-title {
 font-size: 21px;
 line-height: 21px;
+margin-bottom: 25px;
+margin-top: 0;
+
 }
 .advantage-top p{
 font-size: 14px;
 line-height: 21px;
 font-weight: 400;
+margin: 0;
 }
 
 /*Нижняя строка преимуществ*/
@@ -229,24 +332,55 @@ list-style: none;
 text-align: center;
 background-color: #eeeeee;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 margin: 0;
 padding: 0;
 }
 .advantage-bottom .square{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 color:#000000;
-padding-left: 42px;
-padding-right: 44px;
-padding-top: 50px;
-padding-bottom: 40px;
+padding-left: 65px;
+padding-right: 65px;
+padding-top: 46px;
+padding-bottom: 59px;
+}
+.advantage-bottom .square-last{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+color:#000000;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 46px;
+  padding-bottom: 59px;
+  width: 400px;
 }
 .advantage-bottom h2{
   font-size: 21px;
  line-height: 21px;
+ margin-top: 0;
+ margin-bottom: 25px;
+ width: 125px;
+ text-align: center;
 }
 .advantage-bottom p{
  font-weight: 400;
+margin: 0;
+
+
+}
+.advantage-bottom .number{
+  margin-top: 0;
+  margin-bottom: 25px;
+
 }
 
 /*нижняя часть страницы с модальным окном*/
