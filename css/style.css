@@ -605,22 +605,35 @@ background-image: url("../img/map.jpg");
 
 }
 /*Футер*/
+
 .main-footer{
 color: #000000;
-display: flex;
-align-items: center;
 padding:  36px 0;
 background-color: rgba(255, 255, 255, 0.9);
-margin-top: -121px;
+margin-top: -120px;
 
 }
+.catalog-footer{
+  color: #000000;
+  padding:  36px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
 
-.main-footer a{
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.main-footer a,
+.catalog-footer a{
 color:#000000;
 }
 
 .main-footer a:hover,
-.main-footer a:focus{
+.catalog-footer a:hover,
+.main-footer a:focus,
+.catalog-footer a:focus{
 text-decoration: none;
 }
 
