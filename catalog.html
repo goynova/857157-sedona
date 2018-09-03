@@ -8,70 +8,76 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+
     <div class="wrap">
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a href="index.html"  class="main-header-logo">
-            <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип Седоны">
-          </a>
-          <ul class="site-navigation">
-            <li>
-              <a href="info.html">Информация</a>
-            </li>
-            <li>
-              <a href="media.html">Фото и видео</a>
-            </li>
-            <li>
-              <a href="map.html">Карта штата</a>
-            </li>
-            <li>
-              <a href="catalog.html"  class="current">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a href="index.html" class="main-header-logo">
+          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
+        </a>
+        <ul class="site-navigation">
+          <li>
+            <a href="info.html">Информация</a>
+          </li>
+          <li>
+            <a href="media.html" class="left-main">Фото и видео</a>
+          </li>
+          <li>
+            <a href="map.html" class="right-main">Карта штата</a>
+          </li>
+          <li>
+            <a href="catalog.html" class="current">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
   <main class="container">
     <section class="search-filter">
       <form class="filter-form" action="#" method="get">
         <div  class="infrastructure">
-         <p class="filter-title">Инфраструктура</p>
+         <p class="filter-title">Инфраструктура:</p>
           <label>
-           <input class="checkbox" type="checkbox" name="pool" checked>
+           <input class="visually-hidden checkbox checkbox-on" type="checkbox" name="pool" checked>
            <span class="filter-checkbox">Бассейн</span>
           </label>
           <label>
-           <input class="checkbox" type="checkbox" name="parking">
+           <input class="visually-hidden checkbox checkbox-off" type="checkbox" name="parking">
            <span class="filter-checkbox">Парковка</span>
           </label>
           <label >
-            <input class="checkbox" type="checkbox" name="wifi">
+            <input class="visually-hidden checkbox checkbox-off" type="checkbox" name="wifi">
             <span class="filter-checkbox">Wi-Fi</span>
           </label>
         </div>
         <div class="type-house" >
           <p class="filter-title">Тип жилья:</p>
           <label>
-            <input  class="checkbox" type="checkbox" name="hotel" checked>
+            <input  class="visually-hidden checkbox checkbox-on" type="checkbox" name="hotel" checked>
             <span class="filter-checkbox">Гостиница</span>
           </label>
           <label>
-            <input  class="checkbox"type="checkbox" name="motel" checked>
+            <input  class="visually-hidden checkbox checkbox-on" type="checkbox" name="motel" checked>
             <span class="filter-checkbox">Мотель</span>
           </label>
           <label>
-            <input  class="checkbox" type="checkbox" name="apartment" checked>
-            <span class="filter-checkbox">Апартаменты</span>
+            <input  class="visually-hidden checkbox checkbox-on" type="checkbox" name="apartment" checked>
+            <span class="filter-checkbox ">Апартаменты</span>
           </label>
         </div>
+
         <div class="range-column">
-          <p class="filter-title">Стоимость в сутки(р):</p>
+          <p class="filter-title">Стоимость в сутки (р):</p>
           <div class="range-price">
-            <label>От <input type="number" name="min-price" value="0" class="range-number"></label>
-            <label>До <input type="number" name="max-price" value="3000"></label>
+            <label class="min-price">От <input type="text"  value="0" ></label>
+            <label class="max-price" >До <input type="text" value="3000"></label>
           </div>
           <div class="range">
-            <!-- фильтр по цене с двумя ползунками -->
+            <div class="scale">
+              <div class="bar"></div>
           </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
           <button type="button" name="button-price" class="button-price">Показать</button>
         </div>
       </form>
@@ -80,7 +86,7 @@
 
 
     <section class="options">
-      <p class="option-found">Найдено:<span>3</span></p>
+      <p class="option-found">Найдено: <span>3</span></p>
       <div class="option-type">
         <p class="option-type-name">Сортировка:</p>
 
@@ -91,8 +97,14 @@
         </ul>
       </div>
       <ul class="option-direction">
-        <li><a href="to-top"><span class="visually-hidden">По возрастанию</span></a></li>
-        <li><a href="to-bottom"><span class="visually-hidden">По убыванию</span></a></li>
+        <li><a href="to-top"><span class="visually-hidden ">По возрастанию</span> <span class="visually-hidden">По возрастанию</span>
+            <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 0L0 10h11z" />
+            </svg></a></li>
+        <li><a href="to-bottom"><span class="visually-hidden">По убыванию</span>
+          <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path d="M5.5 10L0 0h11" />
+          </svg></a></li>
       </ul>
     </section>
 
@@ -107,7 +119,7 @@
         <h2 class="hotel-link"><a href="Amara-resort"> Amara resort & spa</a></h2>
         <div class="hotel-price">
          <p>Гостиница</p>
-         <p>От 4000р.</p>
+         <p>От 4000 р.</p>
         </div>
         <p class="hotel-more">
           <a href="detailed" class="button-more"> Подробнее</a>
@@ -115,8 +127,14 @@
         </p>
        </div>
      </div>
-       <div>
-         <p class="star"><span class="visually-hidden"> четыре звезды</span></p>
+       <div class="star">
+         <span class="visually-hidden"> четыре звезды</span>
+           <ul class="stars-list">
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                              </ul>
          <p class="rating">Рейтинг: 8,5</p>
        </div>
       </article>
@@ -132,7 +150,7 @@
          <h2 class="hotel-link"><a href="Desert-quail "> Desert quail inn</a></h2>
        <div class="hotel-price">
          <p>Мотель</p>
-         <p>От 3000р.</p>
+         <p>От 3000 р.</p>
        </div>
        <p class="hotel-more">
          <a href="detailed" class="button-more"> Подробнее</a>
@@ -140,8 +158,13 @@
        </p>
        </div>
      </div>
-       <div>
-         <p class="star"><span class="visually-hidden"> три звезды</span></p>
+       <div class="star">
+         <span class="visually-hidden"> три звезды</span>
+           <ul class="stars-list">
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                              </ul>
          <p class="rating">Рейтинг: 8,9</p>
        </div>
       </article>
@@ -156,7 +179,7 @@
        <h2 class="hotel-link"><a href="Villas">Villas at poco diablo</a></h2>
        <div class="hotel-price">
           <p>Апартаменты</p>
-          <p>От 2000р.</p>
+          <p>От 2000 р.</p>
        </div>
 
        <p class="hotel-more">
@@ -165,8 +188,12 @@
        </p>
        </div>
        </div>
-       <div>
-         <p class="star"><span class="visually-hidden"> две звезды</span></p>
+       <div class="star">
+         <span class="visually-hidden"> две звезды</span>
+           <ul class="stars-list">
+                                  <li class="stars-item"></li>
+                                  <li class="stars-item"></li>
+                              </ul>
          <p class="rating">Рейтинг: 9,2</p>
        </div>
 
