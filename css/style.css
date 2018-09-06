@@ -9,6 +9,7 @@ box-sizing: inherit;
 }
 
 body {
+  font-kerning: none;
   position: relative;
 margin: 0;
 padding: 0;
@@ -763,12 +764,13 @@ color: #ffffff;
 }
 .filter-form{
   display: flex;
+  position: relative;
 }
 
 .checkbox + .filter-checkbox {
     display: block;
-    margin-top: 25px;
-    margin-bottom: 0;;
+    margin-top: 23px;
+    margin-bottom: 0;
 }
 
 .checkbox + .filter-checkbox::before {
@@ -794,6 +796,7 @@ color: #ffffff;
 }
  .filter-checkbox{
   padding-left: 40px;
+  padding-bottom: 3px;
 }
 
 .filter-title{
@@ -823,22 +826,36 @@ display: block;
 width: 318px;
 margin-left: auto;
 text-align: center;
+position: relative;
 }
 
 
 .range-price{
-
  position: relative;
 width: 318px;
   height: 36px;
   margin-bottom: 20px;
-  margin-top: 12px;
-
+  margin-top: 10px;
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 
+}
+.range-price label{
+  font-size: 14px;
+line-height: 21px;
+
+display: inline-block;
+vertical-align: baseline;
+cursor: pointer;
+}
+.range-price input{
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
 }
 .range{
   position: relative;
@@ -866,7 +883,7 @@ width: 318px;
 box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 cursor: pointer;
 position: absolute;
-  top: -9px;
+  top: -7px;
 }
 
 .range-toggle-min {
@@ -882,10 +899,8 @@ position: absolute;
 
 .button-price{
   display: block;
- margin-top: 30px;
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 0;
+ margin: 32px 85px 0px 85px;;
+
   padding: 6px 35px;
 
   font-size: 14px;
@@ -914,35 +929,19 @@ position: absolute;
 
   background: #ffffff;
 }
-.range-price label {
-  display: inline-block;
 
-  font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
-
-  cursor: pointer;
-}
 .range-price .min-price,
 .range-price .max-price {
   width: 155px;
   height: 35px;
-      padding-left: 35px
+
 }
-
-.range-price input{
-
-color: #ffffff;
-width: 50px;
-margin: 0;
-
-color: inherit;
-font: inherit;
-
-background: none;
-border: none;
+.range-price .min-price{
+  padding: 5px 0px 5px 35px;
 }
-
+.range-price .max-price {
+    padding: 5px 0px 5px 25px;
+}
 /*сортировка результата поиска*/
 .options{
 display: flex;
@@ -1066,7 +1065,7 @@ flex-direction: column;
 
 .result-hotel{
 display: flex;
-padding:  30px 72px;
+padding: 30px 72px 25px;
 border-bottom: 1px solid #ccc;
 }
 
@@ -1109,12 +1108,10 @@ margin: 0 6px 0 0;
 .hotel-more{
 display: flex;
 margin: 0;
+font-weight: 700;
 }
 
-.result-hotel p{
-font-weight: 400;
 
-}
 .hotel-more a{
 color: #ffffff;
 
@@ -1165,18 +1162,16 @@ color: #666666;
 background-color: #f2f2f2;
 width: 111px;
 height: 28px;
+text-align: center;
+padding: 2px;
 }
-.star{
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.star p{
-  margin: 0;
+.stars{
+background: url("../img/star.svg");
+height: 18px;
+margin-bottom: 45px;
 
 }
-.stars-list{
-  margin: 0;
-  padding: 0;
+.stars +.two-stars{
+  width:40px;
 }
+.catalog-footer{position: relative;}
