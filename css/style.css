@@ -1155,19 +1155,20 @@ padding: 5px;
 }
 .stars{
 background: url("../img/star.svg");
+background-repeat: repeat-x;
 height: 17px;
 margin-bottom: 45px;
 
 }
 .stars-rating .two-stars{
-  width:35px;
-  margin-left: 76px;
+  width:49px;
+  margin-left: 62px;
 }
 .stars-rating .three-stars{
-  width:53px;
-  margin-left: 58px;
+  width:73px;
+  margin-left: 38px;
 }
 .stars-rating .four-stars{
-  width:71px;
-  margin-left: 40px;
+  width:95px;
+  margin-left: 16px;
 }
