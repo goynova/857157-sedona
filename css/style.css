@@ -622,7 +622,7 @@ background-image: url("../img/map.jpg");
 
 .main-footer{
 color: #000000;
-padding:  36px 0;
+padding:  35px 0;
 background-color: rgba(255, 255, 255, 0.9);
 position: absolute;
 bottom: 0;
@@ -878,12 +878,12 @@ cursor: pointer;
   height: 4px;
 
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 10px solid #ffffff;
   border-radius: 50%;
 box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 cursor: pointer;
 position: absolute;
-  top: -7px;
+  top: -9px;
 }
 
 .range-toggle-min {
@@ -1040,22 +1040,6 @@ width:132px;
   fill:#81b3d2;
 }
 
-.stars-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    list-style: none;
-}
-.stars-item {
-    padding-left: 5px;
-}
-.stars-item::after {
-    content: "";
-    display: block;
-    background: url("../img/star.svg");
-    width: 18px;
-    height: 17px;
-}
 /*Информация по отелям*/
 
 .result{
@@ -1065,7 +1049,7 @@ flex-direction: column;
 
 .result-hotel{
 display: flex;
-padding: 30px 72px 25px;
+padding: 30px 72px 15px;
 border-bottom: 1px solid #ccc;
 }
 
@@ -1167,11 +1151,20 @@ padding: 2px;
 }
 .stars{
 background: url("../img/star.svg");
-height: 18px;
+height: 17px;
 margin-bottom: 45px;
 
 }
-.stars +.two-stars{
-  width:40px;
+.stars-rating .two-stars{
+  width:35px;
+  margin-left: 76px;
+}
+.stars-rating .three-stars{
+  width:53px;
+  margin-left: 58px;
+}
+.stars-rating .four-stars{
+  width:71px;
+  margin-left: 40px;
 }
 .catalog-footer{position: relative;}
